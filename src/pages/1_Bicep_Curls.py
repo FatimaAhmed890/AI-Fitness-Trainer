@@ -1,9 +1,8 @@
 import streamlit as st
 import cv2
 import numpy as np
-# import PoseModule 
 import time
-from bicep_angle import bicpCurl
+from bicep_angle import bicepCurl
 
 st.title("Bicep curl 💪🏻 with AI")
 st.write("(Please carefully read the entire instruction manual before performing exercise and perform all movements slowly and deliberately to maintain control.)")
@@ -14,7 +13,7 @@ stop_button_pressed = st.button("Stop")
 cap = cv2.VideoCapture(0)
 
 pTime = 0
-detector = bicpCurl()
+detector = bicepCurl()
 count = 0
 direction = 0 # 2 directions, 0 -> going up and 1 -> going down
  

@@ -90,6 +90,14 @@ while cap.isOpened() and not stop_button_pressed:
             cv2.putText(img, f'{int(l_percentage1)} %', (555, 80), cv2.FONT_HERSHEY_PLAIN, 2,
                         color, 3)
         else:
+            cv2.rectangle(img, (580, int(l_bar)), (620, 460), color, cv2.FILLED)
+            cv2.putText(img, f'{int(l_percentage1)} %', (555, 80), cv2.FONT_HERSHEY_PLAIN, 2,
+                        color, 3)
+        if r_percentage1:
+            cv2.rectangle(img, (580, int(r_bar)), (620, 460), color, cv2.FILLED)
+            cv2.putText(img, f'{int(r_percentage1)} %', (555, 80), cv2.FONT_HERSHEY_PLAIN, 2,
+                        color, 3)
+        else:
             cv2.rectangle(img, (580, int(r_bar)), (620, 460), color, cv2.FILLED)
             cv2.putText(img, f'{int(r_percentage1)} %', (555, 80), cv2.FONT_HERSHEY_PLAIN, 2,
                         color, 3)
