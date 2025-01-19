@@ -1,0 +1,1 @@
+from PoseModule.PoseModule import poseDetector

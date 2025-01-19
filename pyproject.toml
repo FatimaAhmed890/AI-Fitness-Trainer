@@ -1,0 +1,17 @@
+[project]
+name = "AI_Fitness_Trainer"
+version = "0.1.0"
+description = "Smart Posture Guidance for Effective Workouts"
+authors = [
+    {name = "Fatima Ahmed"},
+    {name = "Duaa Sidiqqui"},
+]
+readme = "README.md"
+requires-python = "^3.7"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Homepage = "https://github.com/FatimaAhmed890/AI-Fitness-Trainer.git"
